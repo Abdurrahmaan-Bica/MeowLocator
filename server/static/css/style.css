@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(253, 224, 197);
+}
+
+.nav-link-report {
+    background-color: #ffcccb;
+    color: #333;
+}
+
+.nav-link-view {
+    background-color: #add8e6;
+    color: #333;
+}
