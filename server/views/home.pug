@@ -8,22 +8,36 @@ html(lang="en")
         link(rel="icon" href="/images/favicon.ico")
         title Home
     body 
-        
-     nav.navbar.bg-white.border-bottom.border-body(data-bs-theme="white")
+        nav.navbar.bg-black.border-body(data-bs-theme="black")
             .container-fluid
-                a.navbar-brand 
-                    img(src="/static/images/Cat.png" alt="Cat" width="30" ) 
-                
-                        //- a.nav-link.active(href='#') Report Found Cat
-                        //- a.nav-link.active(href='#') View Found Cats
-                ul.nav.nav-pills.mb-3#pills-tab(role="tablist")
-                    li.nav-item(role="presentation")
-                        a.nav-link(href="/reportform" data-bs-toggle="pill" data-bs-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true")
-                            |Report New Cat
+                a.navbar-brand(href="")
+                    img(src="./static/images/Cat.png" alt=" Cat Logo" width="70" height="75" class="d-inline-block align-text-top")
+                ul.nav.justify-content-end
+                    li.nav-item
+                        a.nav-link(href="") Homepage
+                    li.nav-item
+                        a.nav-link(href="about-us") About us
+        .container(style="margin-top: 13rem;")
+            h2.mt-5 MeowLocator
+            h5.mt-5 Your Last Hope for finding Lost Cats 
+            p.mt-5 MeowLocator, we bring hope to cat owners searching for their lost furry friends. This platform enables those who find lost cats to register them, helping reunite pets with their owners. Join us in making heartwarming reunions possible and giving hope to cat owners everywhere.
+        .container(style="margin-top: 3rem;")
+            a(href="report-cat")
+                button.btn.btn-secondary.btn-lg(type="button") Begin Search
+            
+        .container(style="margin-top: 33rem;")
+           footer.footer.bg-black.text-light.py-3
+            .container.text-center
+                p.mb-0 Made by Abdurrahmaan &copy; 2024
+    
 
-                    li.nav-item(role="presentation")
-                        a.nav-link(href="#" data-bs-toggle="pill" data-bs-target="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="true")
-                            |View Found Cats
+
+
+      
+
+            
+            
+    
 
 
                    

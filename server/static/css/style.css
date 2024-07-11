@@ -1,13 +1,37 @@
 body{
-    background-color: rgb(253, 224, 197);
+    background-color: rgb(0, 0, 0);
+    font-family: Helvetica;
+}
+.container{
+    color: bisque;
+}
+.nav-link{
+    font-weight: bold;
+    color: bisque;
+}
+.nav-link:hover{
+    color: white;
+}
+.btn{
+    font-weight: bold;
+    background-color: bisque;
+    color: black; 
+}
+.btn:hover{
+    background-color: black;
+    color: bisque;
 }
 
-.nav-link-report {
-    background-color: #ffcccb;
-    color: #333;
-}
-
-.nav-link-view {
-    background-color: #add8e6;
-    color: #333;
-}
+#rotate {
+    animation: rotation 6s infinite linear;
+  }
+  
+  @keyframes rotation {
+    0%{
+      transform: translateX(50%) rotate(0deg); 
+    }
+    100% {
+      transform: translateX(-50%) rotate(-45deg); 
+    }
+   
+  }

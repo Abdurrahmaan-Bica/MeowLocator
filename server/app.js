@@ -20,8 +20,11 @@ app.get("/",(req,res)=>{
    res.render("home")
 })
 
-app.get("/reportform",(req,res)=>{
+app.get("/report-cat",(req,res)=>{
     res.render("reportform")
+})
+app.get("/about-us",(req,res)=>{
+    res.render("about-us")
 })
 
 
