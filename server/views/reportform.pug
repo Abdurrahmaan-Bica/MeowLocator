@@ -7,33 +7,50 @@ html(lang="en")
         link(rel="stylesheet", href="/static/css/style.css")
         title Report Form
     body 
-        nav.navbar.bg-black.border-body(data-bs-theme="black")
-            .container-fluid
-                a.navbar-brand(href="")
-                    img(src="./static/images/Cat.png" alt=" Cat Logo" width="70" height="75" class="d-inline-block align-text-top")
-                ul.nav.justify-content-end
-                    li.nav-item
-                        a.nav-link(href="/") Homepage
-                    li.nav-item
-                        a.nav-link(href="about-us") About us
+        nav.navbar.bg-body-tertiary
+        .container-fluid
+          a.navbar-brand(href="")
+            img(src="./static/images/Cat" alt=" Cat Logo" width="200" height="200" class="d-inline-block align-text-top")
+          ul.nav.justify-content-end
+            li.nav-item
+                a.nav-link(href="/") Home
+            li.nav-item
+                a.nav-link(href="") 
+        .container.d-flex.justify-content-center.align-items-center.mt-5
+            h2 Report Form  
+
       
-    .container.d-flex.justify-content-center.align-items-center.mt-5
+        .container.d-flex.justify-content-center.align-items-center(style="margin-top: 3rem;")
+            form(action="/report-cat", method="post")
 
-      form(action="/report-cat", method="post")
-        .mb-3
-            label(for="inputColor", class="form-label") Color
-            input#inputColor.form-control(type="text" name="color")
-        .mb-3
-            label(for="inputRace", class="form-label") Race
-            input#inputRace.form-control(type="text" name="race")
-        .mb-3
-            label(for="inputAge", class="form-label") Age (approximate)
-            input#inputAge.form-control(type="number" name="age" min="1")
-        .mb-3
-            label(for="inputAddress", class="form-label") Street (Local where the cat is)
-            input#inputAddress.form-control(type="text" name="address")
-        .mb-3
-            label(for="inputDescription", class="form-label") Description
-            textarea#inputDescription.form-control(name="description" rows="5")
-        button.btn.btn-secondary(type="submit") Submit
+                .mb-3.row
+                    label.col-sm-3.col-form-label(for="inputColor") Color of the Cat
+                    .col-sm-8
+                        input#InputColor.form-control(type="text" name="color")
+                    br
+                    br
+                .mb-3.row
+                    label.col-sm-3.col-form-label(for="inputBreed") Breed
+                    .col-sm-8
+                        input#InputBreed.form-control(type="text" name="breed")
+                    br
+                    br
+                .mb-3.row
+                    label.col-sm-3.col-form-label(for="inputStreet") Street
+                    .col-sm-8
+                        input#inputStreet.form-control(type="text" name="street")
+                    br
+                    br
+                .mb-3.row
+                    label.col-sm-3.col-form-label(for="inputDescription") Description
+                    .col-sm-8
+                        input#inputDescription.form-control(type="text" name="description")
+                    br
+                    br
+                
+            
 
+                .container(style="margin-top: -1rem;margin-left: 9rem;")
+                  a(href="#")
+                    button.btn.btn-secondary.btn-sm.mt-5(type="button") Submit 
+                    
